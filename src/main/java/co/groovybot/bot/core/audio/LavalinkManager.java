@@ -57,7 +57,7 @@ public class LavalinkManager {
     private GroovyBot groovyBot;
 
     public LavalinkManager(GroovyBot groovyBot) {
-        log.info("[Lavalink] Connecting to Nodes ...");
+    //    log.info("[Lavalink] Connecting to Nodes ...");
         this.groovyBot = groovyBot;
         this.audioPlayerManager = new DefaultAudioPlayerManager();
         audioPlayerManager.getConfiguration().setOpusEncodingQuality(AudioConfiguration.OPUS_QUALITY_MAX);
@@ -67,7 +67,8 @@ public class LavalinkManager {
         audioPlayerManager.registerSourceManager(new DeezerSourceManager());
         audioPlayerManager.registerSourceManager(new ITunesSourceManager());
         audioPlayerManager.registerSourceManager(new YoutubeAudioSourceManager());
-        audioPlayerManager.registerSourceManager(new SoundCloudAudioSourceManager());
+        // TODO FIXME
+        // audioPlayerManager.registerSourceManager(new SoundCloudAudioSourceManager());
         audioPlayerManager.registerSourceManager(new VimeoAudioSourceManager());
         audioPlayerManager.registerSourceManager(new TwitchStreamAudioSourceManager());
         audioPlayerManager.registerSourceManager(new HttpAudioSourceManager());

@@ -98,3 +98,5 @@ buildNumber.properties
 
 *.log
 /sfdcsec.ks
+/.gradle/
+/.apt_generated/
